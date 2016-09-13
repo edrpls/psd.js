@@ -458,7 +458,7 @@ module.exports = Descriptor = (function() {
   };
 
   Descriptor.prototype.parseObjectArray = function() {
-    throw "Descriptor object array not implemented yet @ " + (this.file.tell());
+    throw new Error("Descriptor object array not implemented yet @ " + (this.file.tell()));
   };
 
   Descriptor.prototype.parseRawData = function() {

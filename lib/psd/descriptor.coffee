@@ -126,7 +126,7 @@ module.exports = class Descriptor
   # type is extremely rare. In fact, it's so rare, that I've never run into it
   # among any of my PSDs.
   parseObjectArray: ->
-    throw "Descriptor object array not implemented yet @ #{@file.tell()}"
+    throw new Error "Descriptor object array not implemented yet @ #{@file.tell()}"
 
   # Parses raw byte data of arbitrary length.
   parseRawData: ->
