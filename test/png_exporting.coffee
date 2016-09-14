@@ -13,7 +13,7 @@ describe "exporting from a PSD", ->
   afterEach (done) ->
     rimraf outputPath, done
 
-  it "should export a png", (done) ->
+  it "should export a png", () ->
     psdPath       = path.resolve(__dirname, "../", "examples/images/example.psd")
     filePath      = path.join(outputPath, "out.png")
     expectedPath  = path.join(fixturesPath, "out.png")
@@ -25,6 +25,3 @@ describe "exporting from a PSD", ->
       fs.statSync(filePath).size
       .should
       .eql(fs.statSync(expectedPath).size)
-    .then -> done()
-    .catch done
-
