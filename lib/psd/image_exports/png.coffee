@@ -10,7 +10,8 @@ module.exports =
 
     saveAsPng: (output) ->
         new RSVP.Promise (resolve, reject) =>
-            @toPng()
-                .pack()
-                .pipe(fs.createWriteStream(output))
-                .on 'finish', resolve
+            if @pixelData.length
+                @toPng()
+                    .pack()
+                    .pipe(fs.createWriteStream(output))
+                    .on 'finish', resolve
