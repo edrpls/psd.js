@@ -15,12 +15,9 @@
     "url": "git@github.com:meltingice/psd.js.git"
   },
   "dependencies": {
-    "coffee-script": "~1.10.0",
     "jspack": "~ 0.0.3",
-    "coffeescript-module": "~ 0.2.1",
     "parse-engine-data": "~ 0.1",
     "pngjs": "~3.0.0",
-    "rsvp": "~3.3.0",
     "lodash": "~4.15",
     "iconv-lite": "~ 0.4.4"
   },
@@ -29,13 +26,7 @@
     "docs": "node_modules/docco-husky/bin/generate lib shims"
   },
   "devDependencies": {
-    "bluebird": "^3.4.6",
-    "browserify": "~13.1.0",
-    "coffeeify": "~2.0.1",
     "docco-husky": "*",
-    "mocha": "~3.0.2",
-    "rimraf": "~2.5.4",
-    "should": "~11.1.0",
-    "uglify-js": "^2.4.21"
+    "mocha": "~3.0.2"
   }
 }
